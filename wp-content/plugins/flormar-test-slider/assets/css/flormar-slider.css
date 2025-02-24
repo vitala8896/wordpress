@@ -1,0 +1,120 @@
+.flormar-slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9e6f0;
+    position: relative;
+    height: 50vh; 
+}
+
+.flormar-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    overflow: hidden; 
+    gap: 20px;
+    align-items: center; 
+
+.flormar-slide {
+    flex: 0 0 auto;
+    width: 200px; 
+    height: 80%; 
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.flormar-slide-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.flormar-slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 5px 5px 0 0; 
+}
+
+.flormar-slide h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #000;
+    text-align: center;
+}
+
+.flormar-slide p {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+
+#custom-prev, #custom-next {
+    position: absolute!important;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#custom-prev {
+    left: -60px; 
+}
+
+#custom-next {
+    right: -60px; 
+}
+
+#custom-prev:hover, #custom-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
+.flormar-slider-container {
+    position: relative;
+    overflow: visible;
+}
+
+
+@media (max-width: 768px) {
+    .flormar-slider-container {
+        height: 40vh;
+    }
+
+    .flormar-slide {
+        width: 150px; 
+        height: 70%;
+    }
+
+    .slick-prev, .slick-next {
+        width: 20px;
+        height: 20px;
+        font-size: 22px; 
+        line-height: 20px; 
+    }
+}
